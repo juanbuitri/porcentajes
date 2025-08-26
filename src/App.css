@@ -1,0 +1,119 @@
+/* ======== Estilos Generales ======== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f4f8, #d9e4ec);
+  color: #2c3e50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ======== Contenedor Principal ======== */
+.container {
+  background: #ffffff;
+  padding: 2rem 3rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ======== Títulos ======== */
+h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #34495e;
+  margin-bottom: 1.5rem;
+}
+
+/* ======== Inputs ======== */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+input {
+  padding: 0.6rem;
+  border: 1px solid #bdc3c7;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  width: 100px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #2980b9;
+  box-shadow: 0 0 6px rgba(41, 128, 185, 0.4);
+}
+
+/* ======== Botones ======== */
+.botones {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+button {
+  padding: 0.7rem 1.4rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.btn-add {
+  background: #3498db;
+  color: #fff;
+}
+
+.btn-calc {
+  background: #2ecc71;
+  color: #fff;
+}
+
+/* ======== Resultado ======== */
+.resultado {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.resultado.ok {
+  background: #eafaf1;
+  color: #27ae60;
+  border: 1px solid #2ecc71;
+}
+
+.resultado.error {
+  background: #fdecea;
+  color: #c0392b;
+  border: 1px solid #e74c3c;
+}
